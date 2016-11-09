@@ -19,6 +19,14 @@ public class MyArrayAdapter extends ArrayAdapter {
     @Override
     public View getView(int position, View convertView,ViewGroup parent){
 
+        View v=super.getView(position,convertView,parent);
+        TextView txt=(TextView) v.findViewById(R.id.nombre);
+        ImageView icon=(ImageView) v.findViewById(R.id.caratula);
+        Pelicula p=(Pelicula) getItem(position);
+
+        txt.setText(p.getName());
+        icon.setImageResource(p.getFoto());
+        /*
         View v=convertView;
         ViewHolder holder;
 
@@ -35,7 +43,7 @@ public class MyArrayAdapter extends ArrayAdapter {
             holder=(ViewHolder) v.getTag();
         }
         holder.getLab().setText(peli.getName());
-        holder.getImg().setImageResource(peli.getFoto());
+        holder.getImg().setImageResource(peli.getFoto());*/
         return v;
     }
 

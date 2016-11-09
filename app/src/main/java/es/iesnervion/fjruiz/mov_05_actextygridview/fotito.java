@@ -19,7 +19,10 @@ public class fotito extends AppCompatActivity {
         String[] nombres=res.getStringArray(R.array.sugerencias);
 
         Pelicula piedra=new Pelicula(nombres[0],R.drawable.piedra);
-        Pelicula[] pelis={piedra};
+        Pelicula camara=new Pelicula(nombres[1],R.drawable.camara);
+        Pelicula azkaban=new Pelicula(nombres[2],R.drawable.azkaban);
+        Pelicula caliz=new Pelicula(nombres[3],R.drawable.caliz);
+        Pelicula[] pelis={piedra,camara,azkaban,caliz};
         MyArrayAdapter aa=new MyArrayAdapter(this,R.layout.imagen,R.id.nombre,pelis);
         GridView grid=(GridView) findViewById(R.id.grid);
         grid.setAdapter(aa);
