@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_fotito"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="es.iesnervion.fjruiz.mov_05_actextygridview.MainActivity">
-
-    <AutoCompleteTextView
-        android:id="@+id/autoComplete"
+    android:background="@drawable/fondo"
+    tools:context="es.iesnervion.fjruiz.mov_05_actextygridview.fotito">
+    <GridView android:id="@+id/grid"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="10dp"/>
-    <Button
-        android:id="@+id/siguiente"
-        android:text="Siguiente"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/autoComplete"
-        android:layout_centerHorizontal="true"/>
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"/>
+
+
 </RelativeLayout>

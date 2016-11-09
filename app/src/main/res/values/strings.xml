@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Mov-05-ACText y GridView</string>
+    <string-array name="sugerencias">
+        <item>La Piedra Filosofal</item>
+        <item>La Cámara de los Secretos</item>
+        <item>El Prisionero de Azkabán</item>
+        <item>El Cáliz de Fuego</item>
+        <item>La Orden del Fénix</item>
+        <item>El Principe Mestizo</item>
+        <item>Las Reliquias de la Muerte</item>
+        <item>La Comunidad del Anillo</item>
+        <item>El Hobbit</item>
+        <item>Animales Fantásticos y Donde Encontrarlos</item>
+    </string-array>
+    <string name="title_activity_fotito">Fotito</string>
 </resources>
